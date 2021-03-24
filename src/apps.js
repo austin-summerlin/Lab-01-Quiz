@@ -1,6 +1,6 @@
 import { isYes } from './utils.js';
 
-const quiz = document.getElementById('takeQuiz');``
+const quiz = document.getElementById('takeQuiz');
 const results = document.getElementById('resultsDiv');
 
 quiz.addEventListener('click', () => {

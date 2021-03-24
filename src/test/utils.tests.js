@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.ts';
+import { isYes } from './utils.js';
 
 const test = QUnit.test;
 
@@ -16,5 +17,5 @@ test('should take in a string and return true if answer begins with a y', (expec
     // Make assertions about what is expected versus the actual result
     expect.equal(actual, expected, 'yes returns true');
     expect.equal(isYes('YAASSS'), true, 'YAASSS returns true');
-    expect.equal(isYes(NOOOOOOO), false, 'NOOOOOOO returns false');
+    expect.equal(isYes('NOOOOOOO'), false, 'NOOOOOOO returns false');
 });

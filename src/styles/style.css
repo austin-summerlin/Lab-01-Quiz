@@ -1,8 +1,15 @@
 
+button {
+    border-radius: 10px;
+    box-shadow: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+
 body {
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
-    --gutter: 30px;
     --footer-height: 25px;
     font-family: 'Titillium Web', sans-serif;
     background-color: rgba(88, 148, 138, 0.89);
@@ -13,7 +20,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
 }
 
 section {
@@ -24,11 +30,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    padding-top: 50px;;
 }
 
 header {
@@ -38,7 +40,7 @@ header {
     height: var(--header-height);
     box-shadow: var(--shadow);
     padding-top: 25px;
-    font-family:font-family: 'Dela Gothic One', cursive;
+    font-family: 'Titillium Web', sans-serif;
     font-size: xx-large;
 }
 
@@ -50,17 +52,12 @@ footer {
 }
 
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
+    justify-content: center;
 }
 
-button {
-    border-radius: 10px;
-    box-shadow: whitesmoke;
+
+span {
+    display: flex;
+    justify-content: center;
 }
